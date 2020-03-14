@@ -55,8 +55,8 @@ int main()
 //输入输出
 int main()
 {
-	int num = 0;
-	scanf("请输入一个整数：%d\n",&num);
-	printf("%d", num);
+	int num = 0;;
+	scanf("%d\n",&num);
+	printf("%d\n", num);
 	return 0;
 }
