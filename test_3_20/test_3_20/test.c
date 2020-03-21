@@ -11,7 +11,7 @@
 //int main()
 //{
 //	int ch = 0;
-//	//EOF -and of file - 文件结束标志 - 放在文件末尾
+//	//EOF -end of file - 文件结束标志 - 放在文件末尾
 //	while ((ch = getchar()) != EOF)
 //	{
 //		putchar(ch);
@@ -26,9 +26,9 @@
 //	printf("请输入密码:>");
 //	scanf("%s", input);
 //	printf("请确认密码(Y/N):>");
-//	while (getchar() != EOF)
+//	while (ch = getchar() != '\n')
 //	{
-//		ch = getchar();
+//		 ;
 //	}
 //
 //	if (ch == 'Y')
@@ -71,7 +71,7 @@
 //int main()
 //{
 //	//for循环中的 初始化，判断，调整 可以选择性的省略
-//	//当判断
+//	//当判断部分被省略意味着判断部分恒为真
 //	for (;;)
 //	{
 //		printf("hehe\n");
@@ -102,17 +102,20 @@
 //	return 0;
 //}
 
+
+//计算1到10的阶乘和
 int main()
 {
 	int n = 0;
-	scanf("%d", &n);
 	int i = 1;
 	int ret = 1;
-	while (i <= n)
+	int sum = 0;
+	for (n = 1; n < 10; n++)
 	{
-		ret = ret * i;
-		i++;
-	}
-	printf("%d\n", ret);
+			ret = ret * n;
+			sum = sum + ret;
+
+	}	
+	printf("%d\n", sum);
 	return 0;
 }
